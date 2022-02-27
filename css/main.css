@@ -1,0 +1,82 @@
+header {
+    background: #1e1c32;
+}
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-main-row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.gallery-all {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "treasure jungle rider" "zombie zombie rider";
+}
+
+.mayantreasure {
+    grid-area: treasure;
+}
+.thejungle {
+    grid-area: jungle;
+}
+.zombieshooter {
+    grid-area: zombie;
+}
+.phantomrider {
+    grid-area: rider;
+}
+
+/* footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-image: url(/Slice/footer-bg.jpg);
+    background: url(/Slice/footer-bg.jpg) no-repeat center center fixed;
+    min-width: 100%;
+    min-height: 100%;
+} */
+/* .bg-news-letter {
+    background-image: url(/Slice/news-letter.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+} */
+
+
+/* div.bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+div.bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+} */
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
